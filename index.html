@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+            border: 0;
+            box-sizing: border-box;
+            font-family:'calibri';
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            background-image: linear-gradient(to bottom, rgb(173, 173, 255), white);
+            background-size: cover;
+        }
+        [div="Curriculum"]{
+            width: 100%;
+            height: 100%;
+        }
+       [div="cabecalho"]{
+       width: 100vw;
+       height: 5vw;
+       /*height: 10%;*/
+            display: flex;/*
+            flex-flow: column;*/
+            align-items: center;
+            justify-content: center;/*
+            box-shadow: 0px 0px 5px -1px #000000;*/
+            position: fixed;
+        }
+        [div="contCab"]{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content:space-around;
+        }
+        [div="lista"] nav ul{
+            list-style: none;
+            display: flex;
+            column-gap: 2rem;
+        }
+        [div="lista"] nav ul li a{
+            text-decoration: none;
+            text-transform:capitalize;
+            color: #000000;
+            font-size: 2vw;
+            font-weight: 600;
+        }
+        #Nome{
+            color: #005099;
+        }
+        /*#reserva{
+            font-weight: 700;
+            font-size: 1.5em;
+            margin-bottom: 0.5%;
+        }*/
+        .sec{
+            padding-top: 7%;
+            padding-left: 7%;
+            padding-right: 7%;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            /*border: 1px solid #000000;*/
+            
+        }
+        [div="textsobremim"]{
+            /*width: 40%;*/
+            margin: 0;
+            border: 0;
+            padding: 0;
+        }
+        .sec .text{
+         /*   width: 80%;*/
+            height: 100%;
+            margin-top: 05%;
+            font-size: 2vw;
+            
+        }
+        h1{
+            text-align: center;
+            color: #004dc2;
+            font-weight: 900;
+            border-bottom: 1px solid #004dc2;
+        }
+        /*#iniciotext{
+            font-size: 2.5em;
+            font-weight: 600;
+        }*/
+        .selecionado{
+            border-bottom: 2px solid #005099;
+        }
+        .text3 nav ul{
+            display: flex;
+            flex-flow: column;
+            row-gap: 1rem;
+
+        }
+        .text3 nav ul li{
+            width: 50vw;
+            display: flex;
+            align-items: center;
+            column-gap: 1rem;
+            /*width: 20%;*/
+            border-radius: 2px;
+            /*border-bottom:2px solid  #004dc2;*/
+            box-shadow: 0px 0px 5px -1px #000000;
+
+        }
+        .text3 nav ul li:hover{
+            box-shadow: 0px 0px 20px 2px #005eff;
+
+        }
+        #texttt{
+            margin-bottom: 1%;
+        }
+        [div="titulo2"]{
+            font-size: 2em;
+            font-weight: 600;
+        }
+        [div="contacto"]{
+            display: flex;
+            align-items: center;
+            column-gap: 0.5rem;
+        }
+        [div="contactolist"] div{
+            display: flex;
+            margin-left: 5%;
+            align-items: center;
+            column-gap: 0.5rem;
+        }
+        [div="contactolist"]{
+            padding-top: 2%;
+        }
+        .l1::after{
+            content: '';
+            width: 21vw;
+            height: 0.3rem;
+            background-color: #004dc2;
+            margin: 2rem 0 0 0;
+            position: absolute;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px; 
+        }
+        .l2::after{
+            content: '';
+            width: 16vw;
+            height: 0.3rem;
+            background-color: #004dc2;
+            margin: 2rem 0 0 0;
+            position: absolute;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px; 
+        }
+        .l3::after{
+            content: '';
+            width: 18vw;
+            height: 0.3rem;
+            background-color: #004dc2;
+            margin: 2rem 0 0 0;
+            position: absolute;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px; 
+        }
+        .l4::after{
+            content: '';
+            width: 16vw;
+            height: 0.3rem;
+            background-color: #004dc2;
+            margin: 2rem 0 0 0;
+            position: absolute;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px; 
+        }
+        .l5::after{
+            content: '';
+            width: 19vw;
+            height: 0.3rem;
+            background-color: #004dc2;
+            margin: 2rem 0 0 0;
+            position: absolute;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px; 
+        }
+       /* .l6::after{
+            content: '';
+            width: 14vw;
+            height: 0.3rem;
+            background-color: #004dc2;
+            margin: 2rem 0 0 0;
+            position: absolute;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px; 
+        }
+        .l7::after{
+            content: '';
+            width: 18vw;
+            height: 0.3rem;
+            background-color: #004dc2;
+            margin: 2rem 0 0 0;
+            position: absolute;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px; 
+        }*/
+        marquee{
+            position: fixed;
+            bottom: 0;
+            background-image: linear-gradient(to bottom, rgb(90, 192, 255), white);
+            color: white;
+        }
+        .foto{
+            width: 10vw;
+            height: 10vw;
+            position: fixed;
+            border-radius: 50%;
+            top: 2vw;
+            left: 2vw;
+        }
+        [div="contactolist"]{
+            width: 08rem;
+            display: flex;
+            position: fixed;
+            bottom: 4%;
+            right: 0;
+        }
+        .telefone div{
+            display: flex;
+            align-items: center;
+            font-size: 2vw;
+            
+        }
+    </style>
+</head>
+<body>
+    <div div="Curriculum">
+            <section div="cabecalho">
+                <div div="contCab">
+                    <div div="title">
+                        <h2></h2>
+                    </div>
+                    <div div="lista">
+                        <nav>
+                            <ul>
+                                <li><a href="#inicio">início</a></li>
+                                <li><a href="#sobremim">Sobre mim</label></a></li>
+                                <li><a href="#habilidades">Habilidades</a></li>
+                                <li><a href="#contacto">Contacto</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                </section>
+                <section id="inicio" class="sec sec1">
+                    <div class="text text1">
+                        <h2 id="iniciotext">Ola,<br>
+                        Sou o <span id="Nome">Luísa Paula Valente</span> <br>
+                        Finalista do curso Tecnico de informática <br>
+                        No INSTITUTO POLITÉCNICO DOM DAMIÃO FRANKLIN
+                        </h2>
+                    </div>
+                </section>
+                <section id="sobremim" class="sec sec2">
+                    <h1>Sobre mim</h1>
+                    <div class="text text2">
+                        <div div="textsobremim">
+                   
+                       <p id="reserva"> Sou o Luísa Paula Valente</p><br>
+                       <p> Tenh 19 anos de idade e sou amante de T.I tenho como foco principal programação e gosto de desafiar o meu potêncial para ver até que ponto chega o meu raciocionio.<br>
+                            É isso que me motiva a não desistir e trabalhar, ou seja programar todos os dias meu projecto será uma bilheteria online. 
+                        </p>
+                    </div>
+                    </div>
+                </section>
+                <section id="habilidades" class="sec sec3">
+                    <h1>Habilidades</h1>
+
+                    <div class="text text3">
+                        <h2>Minhas habilidades</h2>
+                        <p id="texttt">Durante minha formação no curso Tecnico de Informatica aprendi</p>
+                        <nav>
+                            <ul>
+                                <li class="l1"><img src="html5.png" width="35" height="35">HTML5</li>
+                                <li class="l2"><img src="css3.png" width="35" height="35">CSS</li>
+                                <li class="l3"><img src="javascript.png" width="35" height="35">JAVASCRIPT</li>
+                                <li class="l4"><img src="csharp.png" width="35" height="35">C#</li>
+                                <li class="l5"><img src="cpp.png" width="35" height="35">C/C++</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </section>
+                <section id="contacto" class="sec sec4">
+                    <h1>contacto</h1>
+                    <div class="text text4">
+                        <div class="telefone">
+                            <div><img src="Phone_24px.png" alt=""><label for="">+244 923 823 981</label></div>
+                        </div>
+                        <div div="contactolist">
+                            <div><a href="https://web.whatsapp.com/"><img src="WhatsApp_48px.png" width="30" height="30"></a></div>
+                            <div><a href=""><img src="Instagram_48px.png" width="30" height="30"><a href="https://web.whatsapp.com/"></a></div>
+                            <div><a href="https://m.facebook.com/100008704991459/"><img src="Facebook_48px.png" width="30" height="30"></a></div>
+                                      
+                        </div>
+                    </div>
+                </section>
+                <img src="WhatsApp Image 2023-01-23 at 11.07.21.jpeg" width="100" height="100" class="foto">
+    
+    </div>
+    
+    <marquee>
+        <p> Sou o Luísa Paula Valente Finalista do curso Tecnico de informática No INSTITUTO POLITÉCNICO DOM DAMIÃO FRANKLIN</p>
+      </marquee>
+    <script type="text/javascript">
+        let p = document.querySelectorAll('a');
+        
+        for (let i = 0; i < 4/*p.length*/; i++) {
+            p[i].press="0";             
+            p[i].addEventListener('click',()=>{
+                    if(p[i].press=="0"){
+                        p[i].classList.add('selecionado');
+                        for (let n = 0; n < p.length; n++) {
+                            if(n!=i){
+                                p[n].classList.remove('selecionado');
+                            }
+                        }   
+                    }
+            });
+            
+        }
+
+    </script>
+</body>
+</html>
